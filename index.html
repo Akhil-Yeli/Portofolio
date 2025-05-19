@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akhil Yeli | Student</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',
+            secondary: '#64748B',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Custom Script -->
+  <script src="script.js" defer></script>
+
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans leading-relaxed tracking-wide flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-4 md:p-5 bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md fixed w-full z-50">
+    <h1 class="text-xl md:text-2xl font-bold text-primary dark:text-blue-300">Akhil Yeli</h1>
+    <div class="space-x-2 md:space-x-4 flex items-center text-sm md:text-base">
+      <a href="#home" class="hover:text-primary dark:hover:text-yellow-400">Home</a>
+      <a href="#about" class="hover:text-primary dark:hover:text-yellow-400">About</a>
+      <a href="#projects" class="hover:text-primary dark:hover:text-yellow-400">Projects</a>
+      <a href="#experience" class="hover:text-primary dark:hover:text-yellow-400">Experience</a>
+      <a href="#resume" class="hover:text-primary dark:hover:text-yellow-400">Resume</a>
+      <a href="#contact" class="hover:text-primary dark:hover:text-yellow-400">Contact</a>
+      <button id="dark-toggle" class="ml-2 md:ml-4 text-primary dark:text-yellow-400 text-xl transition">
+        <i data-feather="moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="mt-20 md:mt-24 flex-1">
+
+    <!-- Home -->
+    <section id="home" class="text-center py-14 md:py-20">
+      <img src="assets/your_photo.jpg" alt="Profile Picture" class="w-24 md:w-32 mx-auto rounded-full mb-6 shadow-lg object-cover">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Hi, I'm Akhil Yeli</h2>
+      <p class="text-md md:text-lg mb-6">Aspiring Software Developer | MSc Computer Science, Lakehead University</p>
+      <p class="max-w-2xl mx-auto mb-8 text-secondary dark:text-gray-400 px-4">
+        I love turning ideas into reality through code and creating efficient, impactful solutions for real-world problems, with a focus on NLP, Computer Vision, and Cybersecurity.
+      </p>
+      <a href="#projects" class="bg-primary hover:bg-blue-900 text-white px-6 py-3 rounded-full transition">View My Projects</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 md:py-24 bg-gray-100 dark:bg-gray-800 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">About</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto text-left px-4">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-yellow-400">About Me</h3>
+          <p class="text-lg leading-relaxed">
+            I'm a Computer Science graduate passionate about software development, web technologies, and machine learning. I've completed impactful projects through internships and self-learning. Currently pursuing an MSc in Computer Science at Lakehead University, Canada (Sep 2024 - Present), after earning a B.Tech in IT from NRI Institute of Technology, India (CGPA: 9.0/10, 2023).
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-yellow-400">Technical Skills</h3>
+          <ul class="space-y-4">
+            <li><span class="font-semibold">Programming:</span> Python, HTML, CSS, SQL, PL/SQL, Kotlin (basic), Clojure (basic)</li>
+            <li><span class="font-semibold">Web Development:</span> HTML, CSS, JavaScript, React.js, Node.js, Vue.js</li>
+            <li><span class="font-semibold">Databases:</span> MySQL, MongoDB</li>
+            <li><span class="font-semibold">Tools:</span> Git, Docker, AWS (Notebooks, S3), Power BI (basic), VSCode, Jest</li>
+            <li><span class="font-semibold">Libraries/Frameworks:</span> NumPy, OpenNLP, Flask</li>
+            <li><span class="font-semibold">Domains:</span> Natural Language Processing, Computer Vision, Cybersecurity (IDS, Steganography, Watermarking)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-yellow-400">Soft Skills</h3>
+          <ul class="space-y-4">
+            <li>Problem-Solving</li>
+            <li>Teamwork & Leadership</li>
+            <li>Critical Thinking</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-14 md:py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10">My Projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto px-4">
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Recommendation System for Product Manufacturers</h3>
+          <p class="mb-2">Built a context-aware recommendation system to help mobile manufacturers optimize features based on user needs and market demand.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: Multiple Linear Regression, Backward Elimination, ANOVA, Collaborative Filtering, Random Forest, Decision Trees</p>
+          <a href="https://github.com/akhilyeli/recommendation-system" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Online Quiz Portal</h3>
+          <p class="mb-2">Developed a simple web-based assessment platform to conduct quizzes online with automatic evaluation and result generation.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: HTML, CSS, JavaScript</p>
+          <a href="https://github.com/akhilyeli/online-quiz-portal" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Violence Detection System</h3>
+          <p class="mb-2">Web app for real-time violence detection using MobileNetV2 + BiLSTM on a YouTube dataset (1000+ videos). Achieved TP: 81, TN: 92 with SGD optimizer.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: Python, Flask, MobileNetV2, BiLSTM</p>
+          <a href="https://github.com/akhilyeli/violence-detection" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">College Event Manager</h3>
+          <p class="mb-2">Portal for managing event registrations, notifications, and feedback.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: PHP, MySQL</p>
+          <a href="https://github.com/akhilyeli/event-management" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Secure Vision</h3>
+          <p class="mb-2">Enhanced WSN security with AES, RSA, and steganography. Built IDS with CNN/RNN (98% accuracy).</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: Python, CNN, RNN, Steganography</p>
+          <a href="https://github.com/akhilyeli/secure-vision" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Habitica Gamification</h3>
+          <p class="mb-2">Designed a personalized gameful system using SDT and Hexad models with Vue.js, Node.js, and MongoDB.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: Vue.js, Node.js, MongoDB, Docker, Jest</p>
+          <a href="https://github.com/akhilyeli/habitica" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Weather Forecast App</h3>
+          <p class="mb-2">Real-time weather prediction and 5-day forecast visualization.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: HTML, CSS, OpenWeatherMap API</p>
+          <a href="https://github.com/akhilyeli/weather-app" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Authorship + NER Pipeline</h3>
+          <p class="mb-2">NLP pipeline in Clojure using OpenNLP for tokenization, NER (Person, Location, Organization), and authorship classification.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: Clojure, OpenNLP</p>
+          <a href="https://github.com/akhilyeli/authorship-ner" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Blog CMS Platform</h3>
+          <p class="mb-2">A full CMS for managing blogs, posts, authors, and comments.</p>
+          <p class="text-sm text-secondary dark:text-gray-300 mb-4">Tech: Node.js, Express.js, MongoDB</p>
+          <a href="https://github.com/akhilyeli/blog-cms" target="_blank" class="text-primary dark:text-yellow-400 underline">GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-16 md:py-24 bg-gray-100 dark:bg-gray-800 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Experience</h2>
+
+      <div class="max-w-4xl mx-auto text-left px-4">
+        <h3 class="text-2xl font-semibold text-primary dark:text-yellow-400 mb-6">Academic Excellence</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <p class="text-secondary dark:text-gray-300 mb-2 font-medium">NRI Institute of Technology, India</p>
+            <ul class="space-y-2 ml-6">
+              <li>Graduated with B.Tech in IT, CGPA: 9.0/10 (Jun 2023).</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-secondary dark:text-gray-300 mb-2 font-medium">Lakehead University, Canada</p>
+            <ul class="space-y-2 ml-6">
+              <li>Currently pursuing MSc in Computer Science (Sep 2024 - Present).</li>
+              <li>Top grades in MSc courses (e.g., Graduate Seminar: 98%, Research Methodology: 85%).</li>
+              <li>Current CGPA (as of May 2025): 3.62 on a 4.0 scale.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="py-14 md:py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">View My Resume</h2>
+      <p class="max-w-xl mx-auto mb-6 text-secondary dark:text-gray-300 px-4">
+        Interested in knowing more about my journey and skills?  
+        You can view my full resume below.
+      </p>
+      <div class="space-x-4">
+        <a href="assets/akhil_resume.pdf" target="_blank" class="bg-primary hover:bg-blue-900 text-white px-6 py-3 rounded-full transition">
+          View Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 md:py-24 bg-primary dark:bg-gray-700 text-white text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Contact Me</h2>
+
+      <div class="max-w-xl mx-auto space-y-12 px-4">
+        <div>
+          <input type="text" id="name" placeholder="Your Name" class="w-full px-4 py-2 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        </div>
+        <div>
+          <textarea id="message" rows="4" placeholder="Your Message" class="w-full px-4 py-2 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+        </div>
+        <a id="send-message" href="#" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-full transition">
+          Send Message
+        </a>
+      </div>
+
+      <div class="mt-12 flex justify-center space-x-8">
+        <div class="flex items-center space-x-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail Icon" class="w-6 h-6">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=akhilyeli@gmail.com" target="_blank" class="underline">Email</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn Icon" class="w-6 h-6">
+          <a href="https://www.linkedin.com/in/akhil-yeli/" target="_blank" class="underline">LinkedIn</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub Icon" class="w-6 h-6">
+          <a href="https://github.com/akhilyeli" target="_blank" class="underline">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    feather.replace();
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Handle Send Message button click to redirect to Gmail website
+    document.getElementById('send-message').addEventListener('click', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = encodeURIComponent(`Message from ${name} via Portfolio`);
+      const body = encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`);
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=akhilyeli@gmail.com&su=${subject}&body=${body}`;
+      window.open(gmailUrl, '_blank');
+    });
+  </script>
+
+</body>
+</html>
